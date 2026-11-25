@@ -1,0 +1,21 @@
+name: CART3R_Dopamine_Demo
+options:
+  bundleIdPrefix: com.geraforsov
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  CART3R_Dopamine_Demo:
+    type: application
+    platform: iOS
+    sources:
+      - path: ContentView.swift
+      - path: CART3R_Dopamine_DemoApp.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.geraforsov.dopaminedemo
+        PRODUCT_NAME: Dopamine Demo
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: "Dopamine Demo"
+        IPHONEOS_DEPLOYMENT_TARGET: "17.0"
